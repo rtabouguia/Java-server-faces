@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/XHtml.xhtml to edit this template
+-->
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://java.sun.com/jsf/html" >
+    <h:head>
+        <title>Navigation implicite</title>
+    </h:head>
+    <h:body>
+        <h1>Navigation implicite</h1>
+        <h3>Aller vers la page hello {via ManagedBean} </h3>
+        <h:form>
+            <h:commandButton action ="#{navigationController.moveToHello}" value="Aller sur la page hello"  />
+        </h:form>
+        <p> Aller vers la page 2 </p>
+        </br>
+         <h:form>
+            <h:commandButton action ="#{navigationController.moveToPage2}" value="Aller sur la page page2"  />
+        </h:form>
+    </h:body>
+</html>
