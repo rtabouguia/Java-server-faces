@@ -15,10 +15,22 @@ Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/XHtml.xhtml to edit t
         <h:form>
             <h:commandButton action ="#{navigationController.moveToHello}" value="Aller sur la page hello"  />
         </h:form>
-        <p> Aller vers la page 2 </p>
-        </br>
+        <h3> Aller vers la page 2 </h3>
+        <hr />
          <h:form>
-            <h:commandButton action ="#{navigationController.moveToPage2}" value="Aller sur la page page2"  />
+            <h:commandButton action ="#page2" value="Aller sur la page page2"  />
         </h:form>
+        
+        <h1> Navigation conditionnelle </h1><!-- comment -->
+        <hr /><!-- comment -->
+        
+        <h:form>
+             <h:commandLink action ="#navigationController.goToPage}" value="Aller sur la page hello">
+                 
+             </h:commandLink>    
+        </h:form>
+            
+    
+    
     </h:body>
 </html>
