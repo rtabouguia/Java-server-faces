@@ -5,7 +5,8 @@ Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/XHtml.xhtml to edit t
 -->
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml"
-      xmlns:h="http://java.sun.com/jsf/html" >
+      xmlns:h="http://java.sun.com/jsf/html" 
+      xmlns:f="http://xmlns.jcp.org/jsf/core">
     <h:head>
         <title>Navigation implicite</title>
     </h:head>
@@ -26,11 +27,28 @@ Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/XHtml.xhtml to edit t
         
         <h:form>
              <h:commandLink action ="#navigationController.goToPage}" value="Aller sur la page hello">
-                 
+                 <f:param name="pageId" value="hello" />
              </h:commandLink>    
         </h:form>
             
-    
+        <br /><!-- comment -->
+        <h1> Forward vs Redirect </h1>
+        <hr />
+        
+        <h3>Forward </h3>
+         <h:form>
+             <h:commandLink action ="hello" value="Forward sur la page hello" />
+                 
+        </h:form>
+          
+        <br /><!-- comment -->
+        
+        <h3>Redirect</h3>
+        
+         <h:form>
+             <h:commandLink action ="hello?faces-redirect=true" value="Redirect sur la page hello" />
+                  
+        </h:form>
     
     </h:body>
 </html>
