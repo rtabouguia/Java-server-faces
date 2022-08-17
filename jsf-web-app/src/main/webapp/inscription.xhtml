@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://java.sun.com/jsf/html" 
+      xmlns:f="http://xmlns.jcp.org/jsf/core">
+    <h:head>
+        <title>Liste des Adherents</title>
+    </h:head>
+    <h:body>
+       <table>
+                <tr>
+                    <td>Nom :</td>
+                    <td><h:inputText value="#{clubManager.name}" /></td>
+                </tr>
+                <tr>
+                    <td>Prenom :</td>
+                    <td><h:inputText value="#{clubManager.prenom}" /></td>
+                </tr>
+                <tr>
+                    <td>Ville :</td>
+                    <td><h:inputText value="#{clubManager.ville}" /></td>
+                </tr>
+                <tr>
+                    <td>Date de naissance :</td>
+                    <td><h:inputText value="#{clubManager.dateNaissance}" /></td>
+                </tr>
+           <tr>
+                    <td>Loisir :</td>
+                    <td><h:inputText value="#{clubManager.loisir}" /></td>
+           </tr><!-- comment -->
+           <tr>
+                    <td>Sexe :</td>
+                    <td><h:inputText value="#{clubManager.sexe}" /></td>
+                </tr>
+                
+            </table>
+    </h:body>
+</h:html>
